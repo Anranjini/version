@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "packagePatterns": ["pom.xml"],
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
+}

@@ -4,8 +4,7 @@
     {
       "groupName": "Spring Boot",
       "updateTypes": ["minor", "patch"],
-      "packagePatterns": ["org.springframework.boot:*"],
-      "lookUpVersionPattern": "^\\d+\\.\\d+\\.\\d+.*$"
+      "packagePatterns": ["org.springframework.boot:*"]
     }
   ]
 }

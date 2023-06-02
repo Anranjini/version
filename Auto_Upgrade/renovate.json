@@ -4,7 +4,9 @@
     {
       "groupName": "Spring Boot",
       "updateTypes": ["minor", "patch"],
-      "packagePatterns": ["org.springframework.boot:*"]
+      "packagePatterns": ["org.springframework.boot:*"],
+       "versioningStrategy": "off"
+      
     }
   ]
 }

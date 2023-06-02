@@ -9,6 +9,13 @@ public class Main {
 	public static void main(String[] args) {
 		SpringApplication.run(Main.class, args);
 	}
-	
+	@RestController
+	  public class MyController {
+
+	    @GetMapping("/")
+	    public String home() {
+	      return "Hello, World!";
+	    }
+	  }
 
 }

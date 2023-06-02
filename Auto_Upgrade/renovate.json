@@ -1,22 +1,11 @@
 {
-	"extends": [
-		"config:base"
-	],
-	"packageRules": [
-		{
-			"matchDatasources": [
-				"maven"
-			],
-			"matchUpdateTypes": [
-				"major",
-				"minor",
-				"patch"
-			],
-			"groupName": "Spring Boot",
-			"automaticUpgrade": true,
-			"packageNames": [
-				"org.springframework.boot"
-			]
-		}
-	]
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "Spring Boot",
+      "updateTypes": ["minor", "patch"],
+      "packagePatterns": ["org.springframework.boot:*"],
+      "lookUpVersionPattern": "^\\d+\\.\\d+\\.\\d+.*$"
+    }
+  ]
 }

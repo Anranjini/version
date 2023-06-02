@@ -1,10 +1,22 @@
 {
-  "extends": ["config:base"],
-  "packageRules": [
-    {
-      "packagePatterns": ["pom.xml"],
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
-    }
-  ]
+	"extends": [
+		"config:base"
+	],
+	"packageRules": [
+		{
+			"matchDatasources": [
+				"maven"
+			],
+			"matchUpdateTypes": [
+				"major",
+				"minor",
+				"patch"
+			],
+			"groupName": "Spring Boot",
+			"automaticUpgrade": true,
+			"packageNames": [
+				"org.springframework.boot"
+			]
+		}
+	]
 }

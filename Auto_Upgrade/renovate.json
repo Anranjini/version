@@ -11,9 +11,9 @@
       "schedule": ["at any time"]
     },
     {
-      "packageNames": ["your.groupId:your-artifact"],
+      "packageNames": ["org.springframework.boot:spring-boot-starter-web"],
       "enabled": true,
-      "groupName": "your-group",
+      "groupName": "spring-boot",
       "schedule": ["at any time"]
     }
   ]

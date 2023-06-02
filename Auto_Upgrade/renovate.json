@@ -2,11 +2,12 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "groupName": "Spring Boot",
+      "packagePatterns": [
+        "org.springframework.boot:spring-boot-starter-web"
+      ],
+      "enabled": true,
       "updateTypes": ["minor", "patch"],
-      "packagePatterns": ["org.springframework.boot:*"],
-       "versioningStrategy": "off"
-      
+      "automerge": true
     }
   ]
 }

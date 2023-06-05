@@ -1,12 +1,11 @@
 {
-  "packageManagers": [
+  "extends": ["config:base"],
+  "packageRules": [
     {
-      "packageManager": "maven",
-      "depTypeList": ["maven"]
+      "groupName": "Spring Boot",
+      "updateTypes": ["minor", "patch"],
+      "packagePatterns": ["org.springframework.boot:*"],
+      "versioningStrategy": "off"
     }
-  ],
-  "schedule": ["every Tuesday"],
-  "versioning": {
-    "default": "auto"
-  }
+  ]
 }

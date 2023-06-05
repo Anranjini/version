@@ -5,7 +5,7 @@
       "depTypeList": ["maven"]
     }
   ],
-  "schedule": ["every Monday"],
+  "schedule": ["every Tuesday"],
   "versioning": {
     "default": "auto"
   }

@@ -1,10 +1,20 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
+  "rangeStrategy": "auto",
+  "rangeStrategyOverrides": {
+    "full": {
+      "matchDepTypes": ["direct"]
+    }
+  },
+  "platform": "github",
+  "repositories": [
+    "https://github.com/Anranjini/Auto.git"
+  ],
   "packageRules": [
     {
-      "groupName": "Spring Boot",
-      "updateTypes": ["minor", "patch"],
-      "packagePatterns": ["org.springframework.boot:*"]
+      "packagePatterns": ["*"],
+      "enabled": true
     }
   ]
 }

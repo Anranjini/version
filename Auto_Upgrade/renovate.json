@@ -1,20 +1,12 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-  "platform": "github",
-  "dependencies": [
+  "packageManagers": [
     {
-      "packageNames": ["org.springframework.boot:spring-boot-starter-parent"],
-      "enabled": true,
-      "groupId": "org.springframework.boot",
-      "groupName": "spring-boot",
-      "schedule": ["at any time"]
-    },
-    {
-      "packageNames": ["org.springframework.boot:spring-boot-starter-web"],
-      "enabled": true,
-      "groupName": "spring-boot",
-      "schedule": ["at any time"]
+      "packageManager": "maven",
+      "depTypeList": ["maven"]
     }
-  ]
+  ],
+  "schedule": ["every Monday"],
+  "versioning": {
+    "default": "auto"
+  }
 }

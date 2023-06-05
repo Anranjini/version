@@ -1,20 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "rangeStrategy": "auto",
-  "rangeStrategyOverrides": {
-    "full": {
-      "matchDepTypes": ["direct"]
-    }
-  },
   "platform": "github",
   "repositories": [
-    "https://github.com/Anranjini/custom.git"
-  ],
-  "packageRules": [
     {
-      "packagePatterns": ["*"],
-      "enabled": true
+      "repository": "https://github.com/Anranjini/custom.git",
+      "depName": "com.example:my-library",
+      "versioning": "range",
+      "rangeStrategy": "bump",
+      "range": "[1.0.0,2.0.0)",
+      "packageFiles": ["pom.xml"]
     }
   ]
 }

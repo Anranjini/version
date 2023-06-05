@@ -9,7 +9,7 @@
   },
   "platform": "github",
   "repositories": [
-    "https://github.com/Anranjini/Auto.git"
+    "https://github.com/Anranjini/custom.git"
   ],
   "packageRules": [
     {
